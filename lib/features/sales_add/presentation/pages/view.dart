@@ -1,3 +1,4 @@
+import 'package:dms/config/qr_code_scanner/qr_code_scanner_page.dart';
 import 'package:dms/core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -37,17 +38,27 @@ class _Sales_AddState extends State<Sales_Add> {
                 style: CustomTextStyles.bodyText,
               ),
             ),
-            Card(
-              color: Color(0XFFEAEAEA),
-              child: Padding(
-                padding:
-                    const EdgeInsets.only(top: 10.0, bottom: 10.0, left: 5.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("O&S MOBILE SHOP-TGL0056"),
-                    Icon(Icons.arrow_forward_ios_rounded),
-                  ],
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => QRCodeScannerPages(),
+                  ),
+                );
+              },
+              child: Card(
+                color: Color(0XFFEAEAEA),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(top: 10.0, bottom: 10.0, left: 5.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("O&S MOBILE SHOP-TGL0056"),
+                      Icon(Icons.arrow_forward_ios_rounded),
+                    ],
+                  ),
                 ),
               ),
             ),
