@@ -252,7 +252,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 Text(
                   label,
                   style: TextStyle(
-                    fontSize: 12.0,
+                    fontSize: 10.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),

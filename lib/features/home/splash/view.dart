@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen>
                 children: [
                   TextItem(
                     text: Text(
-                      'Sale Xtra Limited Limited Xtra Sale',
+                      'Synergy Interface Limited',
                       style: TextStyle(
                         fontSize: 18,
                         color: Colors.white,
