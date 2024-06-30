@@ -9,7 +9,8 @@ class CustomTextStyles {
 
   static const TextStyle bodyText = TextStyle(
     fontSize: 16.0,
-    color: Colors.grey,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
   );
 
   static const TextStyle caption = TextStyle(
