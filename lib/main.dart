@@ -1,6 +1,5 @@
+import 'package:dms/features/home/splash/view.dart';
 import 'package:flutter/material.dart';
-
-import 'features/home/dashboard/presentation/pages/view.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: DashboardScreen(),
+      home: SplashScreen(),
     );
   }
 }

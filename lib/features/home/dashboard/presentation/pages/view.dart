@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
+import '../../../../../config/qr_code_scanner/qr_code_scanner_page.dart';
 import '../../../../../core/styles/custom_color.dart';
 import '../../../../sales_return_retailer/presentation/pages/view.dart';
 
@@ -308,7 +309,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
             );
           }),
           _buildListTile(3, Icons.loop, 'Sales Return', () {
-            // Navigate to Sales Return screen
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => QRCodeScannerPages(),
+              ),
+            );
           }),
           _buildListTile(4, Icons.check_circle, 'Purchase Confirm', () {
             // Navigate to Purchase Confirm screen
