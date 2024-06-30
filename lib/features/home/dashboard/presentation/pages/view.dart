@@ -4,6 +4,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 import '../../../../../core/styles/custom_color.dart';
+import '../../../../sales_return_retailer/presentation/pages/view.dart';
 
 class DashboardScreen extends StatefulWidget {
   @override
@@ -299,7 +300,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
             );
           }),
           _buildListTile(2, Icons.undo, 'Sales Return(Retailer)', () {
-            // Navigate to Sales Return (Retailer) screen
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SalesReturn_Retailer(),
+              ),
+            );
           }),
           _buildListTile(3, Icons.loop, 'Sales Return', () {
             // Navigate to Sales Return screen
